@@ -127,3 +127,8 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# ehrapy
+*.h5ad
+ehrapy_versions.txt
+ehrapy_data
