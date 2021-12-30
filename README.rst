@@ -1,4 +1,5 @@
-# ehrapy-tutorials
+ehrapy-tutorials
+================
 
 This repository hosts all tutorials for ehrapy. They are automatically run on pull requests against ehrapy.
 
