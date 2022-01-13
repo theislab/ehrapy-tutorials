@@ -132,3 +132,4 @@ dmypy.json
 *.h5ad
 ehrapy_versions.txt
 ehrapy_data
+medcat_data
