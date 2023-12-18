@@ -135,3 +135,7 @@ ehrapy_data
 medcat_data
 *.csv
 *.tsv
+
+# FHIR
+synthea_sample_data_fhir_latest.zip
+fhir_dataset
