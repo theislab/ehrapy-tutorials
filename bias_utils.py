@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 
 
 
-def hist_plot_num_medication(adata_to_plot, title, has_missing):
+def plot_hist_num_medication(adata_to_plot, title, has_missing):
     """Plot histogram of number of medications per visit."""
     num_medications = adata_to_plot.X[:, adata_to_plot.var_names == "num_medications"]
     mean_value = np.nanmean(num_medications)
@@ -43,7 +43,7 @@ def hist_plot_num_medication(adata_to_plot, title, has_missing):
 
 
 
-def plot_normalization(adata, adata_scaled_together, adata_scaled_separate, batch_key="age_group", var_of_interest="num_medications"):
+def plot_hist_normalization(adata, adata_scaled_together, adata_scaled_separate, batch_key="age_group", var_of_interest="num_medications"):
     """Plot histogram of original data, jointly normalized, and split normalization (by batch_key variable)."""
 
     fig, axs = plt.subplots(1, 3, figsize=(21, 5))
