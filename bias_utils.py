@@ -56,8 +56,8 @@ def distributions_plot(labels, adatas, var_of_interest):
         if i > 0:
             axes[i+1].spines["top"].set_visible(False)
         
-    fig.suptitle(var_of_interest, )
-    axes[0].legend()
+    fig.suptitle(f"Distribution of the {var_of_interest} variable")
+    axes[0].legend(fontsize=9)
 
 
 def grouped_barplot(df):
