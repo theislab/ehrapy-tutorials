@@ -30,10 +30,10 @@ ep.pp.pca(adata)
 
 adata.obsm["X_pca"] = adata.obsm["X_pca"].compute()
 
-sc.pp.neighbors(adata)
+ep.pp.neighbors(adata)
 
-sc.tl.leiden(adata)
+ep.tl.leiden(adata)
 
-sc.pl.pca(adata, color="leiden", save="profiling_out_of_core_pca.png")
+ep.pl.pca(adata, color="leiden", save="profiling_out_of_core_pca.png")
 
 scalene.scalene_profiler.stop()

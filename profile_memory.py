@@ -25,7 +25,7 @@ ep.pp.scale_norm(adata)
 
 ep.pp.pca(adata)
 
-sc.pp.neighbors(adata)
+ep.pp.neighbors(adata)
 
 ep.tl.leiden(adata)
 
