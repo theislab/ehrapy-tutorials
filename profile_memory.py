@@ -6,14 +6,15 @@ import pandas as pd
 from sklearn.datasets import make_blobs as make_blobs
 import ehrapy as ep
 import anndata as ad
-import scanpy as sc
 
 n_individuals = 50000
 n_features = 1000
 n_groups = 4
 chunks = 1000
 
-data_features, data_labels = make_blobs(n_samples=n_individuals, n_features=n_features, centers=n_groups, random_state=42)
+data_features, data_labels = make_blobs(
+    n_samples=n_individuals, n_features=n_features, centers=n_groups, random_state=42
+)
 
 var = pd.DataFrame({"feature_type": ["numeric"] * n_features})
 
