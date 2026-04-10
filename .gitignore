@@ -135,6 +135,7 @@ dmypy.json
 ehrapy_versions.txt
 ehrapy_data
 medcat_data
+saits_model
 *.csv
 *.tsv
 
